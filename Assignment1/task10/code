@@ -1,0 +1,73 @@
+#include <iomanip>
+#include <iostream>
+#include <limits>
+
+void compareTotals(long long journeys)
+{
+    const long long farePaise = 3600;
+    const double fareRupees = 36.00;
+
+    long long integerTotal =
+        journeys * farePaise;
+
+    double doubleTotal =
+        journeys * fareRupees;
+
+    int intTotal = 0;
+
+    for (long long i = 0; i < journeys; ++i)
+    {
+        intTotal += static_cast<int>(farePaise);
+    }
+
+    std::cout
+        << "\nJourneys: "
+        << journeys << '\n';
+
+    std::cout
+        << "Integer paise total: "
+        << integerTotal
+        << " paise\n";
+
+    std::cout
+        << "Integer rupees total: Rs "
+        << integerTotal / 100.0
+        << '\n';
+
+    std::cout
+        << "Double total: Rs "
+        << std::fixed
+        << std::setprecision(2)
+        << doubleTotal
+        << '\n';
+
+    std::cout
+        << "Difference: "
+        << doubleTotal -
+               integerTotal / 100.0
+        << '\n';
+
+    std::cout
+        << "int accumulated value: "
+        << intTotal
+        << '\n';
+}
+
+int main()
+{
+    std::cout
+        << "INT_MAX = "
+        << std::numeric_limits<int>::max()
+        << '\n';
+
+    std::cout
+        << "LONG_LONG_MAX = "
+        << std::numeric_limits<long long>::max()
+        << '\n';
+
+    compareTotals(20000);
+    compareTotals(500000);
+    compareTotals(3000000);
+
+    return 0;
+}

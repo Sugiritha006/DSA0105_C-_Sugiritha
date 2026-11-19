@@ -1,0 +1,7 @@
+Airport weekday peak: Rs 72.00
+Airport weekend: Rs 54.00
+Inner covered: true
+Middle covered: true
+Outer covered: false
+Airport covered: false
+After pass expiry, Inner covered: false

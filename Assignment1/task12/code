@@ -1,0 +1,166 @@
+#include <array>
+#include <iostream>
+
+enum class Zone
+{
+    Inner,
+    Middle,
+    Outer,
+    Airport
+};
+
+constexpr std::array<long long, 4>
+FARE_PAISE =
+{
+    1000,   // Inner = Rs 10
+    2000,   // Middle = Rs 20
+    3000,   // Outer = Rs 30
+    6000    // Airport = Rs 60
+};
+
+long long baseFare(Zone zone)
+{
+    return FARE_PAISE[
+        static_cast<int>(zone)
+    ];
+}
+
+bool isPeak(int hour)
+{
+    return
+        (hour >= 8 && hour < 10) ||
+        (hour >= 17 && hour < 20);
+}
+
+long long calculateFare(
+    Zone zone,
+    int hour,
+    bool weekend)
+{
+    long long fare =
+        baseFare(zone);
+
+    /*
+       Weekend discount has priority.
+       It does not combine with peak surcharge.
+    */
+
+    if (weekend)
+    {
+        fare = fare * 90 / 100;
+    }
+    else if (isPeak(hour))
+    {
+        fare = fare * 120 / 100;
+    }
+
+    return fare;
+}
+
+class MonthlyPass
+{
+private:
+    Zone zone1;
+    Zone zone2;
+    bool valid;
+
+public:
+    MonthlyPass(
+        Zone first,
+        Zone second)
+        : zone1(first),
+          zone2(second),
+          valid(true)
+    {
+    }
+
+    bool covers(Zone zone) const
+    {
+        return valid &&
+               (zone == zone1 ||
+                zone == zone2);
+    }
+
+    void expire()
+    {
+        valid = false;
+    }
+};
+
+void printFare(
+    const char* description,
+    long long fare)
+{
+    std::cout
+        << description
+        << ": Rs "
+        << fare / 100
+        << '.'
+        << (fare % 100 < 10 ? "0" : "")
+        << fare % 100
+        << '\n';
+}
+
+int main()
+{
+    /*
+       Airport weekday peak:
+       Rs 60 + 20% = Rs 72
+    */
+    printFare(
+        "Airport weekday peak",
+        calculateFare(
+            Zone::Airport,
+            18,
+            false));
+
+    /*
+       Airport weekend:
+       Rs 60 - 10% = Rs 54
+    */
+    printFare(
+        "Airport weekend",
+        calculateFare(
+            Zone::Airport,
+            18,
+            true));
+
+    /*
+       Monthly pass covers Inner and Middle.
+    */
+    MonthlyPass pass(
+        Zone::Inner,
+        Zone::Middle);
+
+    std::cout
+        << std::boolalpha;
+
+    std::cout
+        << "Inner covered: "
+        << pass.covers(Zone::Inner)
+        << '\n';
+
+    std::cout
+        << "Middle covered: "
+        << pass.covers(Zone::Middle)
+        << '\n';
+
+    std::cout
+        << "Outer covered: "
+        << pass.covers(Zone::Outer)
+        << '\n';
+
+    std::cout
+        << "Airport covered: "
+        << pass.covers(Zone::Airport)
+        << '\n';
+
+    pass.expire();
+
+    std::cout
+        << "After pass expiry, Inner covered: "
+        << pass.covers(Zone::Inner)
+        << '\n';
+
+    return 0;
+}

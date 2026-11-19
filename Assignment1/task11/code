@@ -1,0 +1,141 @@
+#include <array>
+#include <iostream>
+
+enum class Zone
+{
+    Inner,
+    Middle,
+    Outer
+};
+
+class FareTable
+{
+private:
+    static constexpr std::array<long long, 3>
+        FARES =
+        {
+            1000,
+            2000,
+            3000
+        };
+
+public:
+    static long long getFare(Zone zone)
+    {
+        return FARES[
+            static_cast<int>(zone)
+        ];
+    }
+};
+
+class SmartCard
+{
+private:
+    long long balancePaise;
+
+    static constexpr long long
+        MIN_BALANCE_PAISE = 5000;
+
+public:
+    explicit SmartCard(long long balance)
+        : balancePaise(balance)
+    {
+    }
+
+    bool canTravel(long long fare) const
+    {
+        return balancePaise - fare >=
+               MIN_BALANCE_PAISE;
+    }
+
+    bool deduct(long long fare)
+    {
+        if (!canTravel(fare))
+        {
+            return false;
+        }
+
+        balancePaise -= fare;
+        return true;
+    }
+
+    long long getBalance() const
+    {
+        return balancePaise;
+    }
+};
+
+class Journey
+{
+private:
+    Zone zone;
+    int hour;
+
+public:
+    Journey(Zone z, int h)
+        : zone(z), hour(h)
+    {
+    }
+
+    bool isPeak() const
+    {
+        return
+            (hour >= 8 && hour < 10) ||
+            (hour >= 17 && hour < 20);
+    }
+
+    long long fare() const
+    {
+        long long result =
+            FareTable::getFare(zone);
+
+        if (isPeak())
+        {
+            result += result * 20 / 100;
+        }
+
+        return result;
+    }
+
+    bool process(SmartCard& card) const
+    {
+        return card.deduct(fare());
+    }
+};
+
+int main()
+{
+    SmartCard card(10000);
+
+    Journey journeys[] =
+    {
+        {Zone::Inner, 12},
+        {Zone::Outer, 18},
+        {Zone::Middle, 12}
+    };
+
+    for (const Journey& journey : journeys)
+    {
+        long long fare = journey.fare();
+
+        if (journey.process(card))
+        {
+            std::cout
+                << "Accepted: "
+                << fare
+                << " paise\n";
+        }
+        else
+        {
+            std::cout
+                << "Denied: low balance\n";
+        }
+    }
+
+    std::cout
+        << "Final balance: "
+        << card.getBalance()
+        << " paise\n";
+
+    return 0;
+}

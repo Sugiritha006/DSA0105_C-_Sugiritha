@@ -1,0 +1,23 @@
+INT_MAX = 2147483647
+LONG_LONG_MAX = 9223372036854775807
+
+Journeys: 20000
+Integer paise total: 72000000 paise
+Integer rupees total: Rs 720000
+Double total: Rs 720000.00
+Difference: 0.00
+int accumulated value: 72000000
+
+Journeys: 500000
+Integer paise total: 1800000000 paise
+Integer rupees total: Rs 18000000.00
+Double total: Rs 18000000.00
+Difference: 0.00
+int accumulated value: 1800000000
+
+Journeys: 3000000
+Integer paise total: 10800000000 paise
+Integer rupees total: Rs 108000000.00
+Double total: Rs 108000000.00
+Difference: 0.00
+int accumulated value: -2084901888

@@ -1,0 +1,5 @@
+Original Value: 25
+Literal Value: 100
+PI Value: 3.14159
+Constant Value: 50
+Updated a: 35

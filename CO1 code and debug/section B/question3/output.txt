@@ -1,0 +1,3 @@
+Flight Not Ready
+Warning or failure detected
+Radio Telemetry Link Active

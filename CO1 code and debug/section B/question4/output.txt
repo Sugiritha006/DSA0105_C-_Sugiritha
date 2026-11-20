@@ -1,0 +1,3 @@
+Divisors: 1 28 2 14 4 7
+Sum of Divisors: 56
+Perfect Number

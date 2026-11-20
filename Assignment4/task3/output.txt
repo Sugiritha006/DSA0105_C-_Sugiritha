@@ -1,0 +1,28 @@
+Address constructed
+Course constructed
+
+Creating Student...
+Person constructed
+Student constructed
+
+Student Details
+Register No: 192311001
+Name: Kavya
+Age: 19
+Address: Salem-636001
+Course: CS301 - Object Oriented Programming
+
+Leaving block...
+Student destroyed
+Course destroyed
+Person destroyed
+Address destroyed
+
+Creating Staff...
+Person constructed
+Staff constructed
+Staff destroyed
+Person destroyed
+Address destroyed
+Course destroyed
+Address destroyed

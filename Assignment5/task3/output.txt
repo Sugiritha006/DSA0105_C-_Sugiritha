@@ -1,0 +1,10 @@
+VIRTUAL FUNCTION vs SWITCH CASE
+Bills: 10 | Virtual: 0 us | Switch: 0 us
+Bills: 1000 | Virtual: 27 us | Switch: 8 us
+Bills: 1000000 | Virtual: 23179 us | Switch: 8478 us
+Bills: 10000000 | Virtual: 234359 us | Switch: 88216 us
+
+EXCEPTION vs RETURN CODE
+Invalid rate: 0% | Return code: 14893 us | Exception: 18074 us
+Invalid rate: 1% | Return code: 15296 us | Exception: 30551 us
+Invalid rate: 50% | Return code: 15933 us | Exception: 730624 us

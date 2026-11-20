@@ -1,0 +1,8 @@
+Direct/object pointer:
+Cart total: 324.00
+Through reference:
+Cart total: 396.00
+Dynamic cart:
+Cart total: 85.50
+
+Highest cart total: 450.00

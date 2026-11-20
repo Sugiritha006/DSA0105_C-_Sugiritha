@@ -1,0 +1,4 @@
+Local Tax: 0.05
+Global Tax Calculation: 1180
+Inner Local Tax: 1120
+Final Global Calculation: 1180

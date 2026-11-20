@@ -1,0 +1,38 @@
+===== VEHICLE FLEET =====
+Bicycle | Registration: BIKE101 | Daily rate: Rs 200.00
+Status: Available
+
+Two-Wheeler | Registration: BIKE202 | Fuel: 5.00 L | Daily rate: Rs 500.00
+Status: Available
+
+Car | Registration: CAR303 | Fuel: 30.00 L | Seats: 5 | Daily rate: Rs 1500.00
+Status: Available
+
+Electric Car | Registration: EV404 | Battery: 60.00 kWh | Daily rate: Rs 1800.00
+Status: Available
+
+Electric Bus | Registration: BUS505 | Seats: 40 | Battery: 300.00 kWh | Daily rate: Rs 5000.00
+Status: Available
+
+
+BIKE101 rented successfully.
+BIKE101 return bill: Rs 700.00
+CAR303 return bill: Rs 7600.00
+EV404 return bill: Rs 4200.00
+BUS505 return bill: Rs 20900.00
+
+===== VEHICLE FLEET =====
+Bicycle | Registration: BIKE101 | Daily rate: Rs 200.00
+Status: Available
+
+Two-Wheeler | Registration: BIKE202 | Fuel: 5.00 L | Daily rate: Rs 500.00
+Status: Available
+
+Car | Registration: CAR303 | Fuel: 30.00 L | Seats: 5 | Daily rate: Rs 1500.00
+Status: Available
+
+Electric Car | Registration: EV404 | Battery: 60.00 kWh | Daily rate: Rs 1800.00
+Status: Available
+
+Electric Bus | Registration: BUS505 | Seats: 40 | Battery: 300.00 kWh | Daily rate: Rs 5000.00
+Status: Available

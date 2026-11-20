@@ -1,0 +1,7 @@
+SeniorAccount constructed
+Interest rates:
+3.5
+4
+Account destructor
+SeniorAccount destructor
+Account destructor

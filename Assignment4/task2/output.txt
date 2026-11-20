@@ -1,0 +1,9 @@
+Teaching Assistant
+Kavya 101 9876543210
+Programme: CSE, CGPA: 8.7
+Department: Computer Science, Salary: 45000
+Subject: OOP
+
+Research Scholar
+Rahul 102 9123456780
+Programme: CSE, CGPA: 9.1, Fellowship: 30000

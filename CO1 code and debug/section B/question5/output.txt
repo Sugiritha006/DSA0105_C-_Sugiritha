@@ -1,0 +1,6 @@
+Authentication Successful!
+Available Balance: Rs. 5000
+Deposit Successful!
+Withdrawal Successful!
+Remaining Balance: Rs. 5500
+Thank you for using ATM!

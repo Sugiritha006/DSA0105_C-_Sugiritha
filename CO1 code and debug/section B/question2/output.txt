@@ -1,0 +1,4 @@
+Taxable Income: 995000
+Income Tax: 111500
+Cess: 4460
+Final Tax: 115960

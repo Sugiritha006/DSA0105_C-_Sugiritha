@@ -1,0 +1,6 @@
+Buffer allocated at [memory address]
+Copied buffer allocated at [different memory address]
+Processing sample 0: 10
+Deallocating buffer at [copied memory address]
+Back in main, sample 0: 10
+Deallocating buffer at [original memory address]

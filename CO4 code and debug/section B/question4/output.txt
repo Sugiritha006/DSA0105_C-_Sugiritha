@@ -1,0 +1,7 @@
+Vehicle initialized.
+Autonomous Vehicle initialized.
+Delivery Drone initialized.
+Vehicle ID: 101
+Lidar: Lidar-X
+Payload: 5.5 kg
+Drone Flight Telemetry Active.

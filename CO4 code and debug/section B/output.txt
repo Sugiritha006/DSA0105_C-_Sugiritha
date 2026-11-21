@@ -1,0 +1,7 @@
+Person ID: 101
+Name: Arun
+GPA: 8.5
+Credits: 90
+Department: Computer Science
+Rank: Assistant
+Stipend: Rs. 15000

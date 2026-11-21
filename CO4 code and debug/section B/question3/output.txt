@@ -1,0 +1,2 @@
+Circle Center: (12, 30)
+Radius: 7

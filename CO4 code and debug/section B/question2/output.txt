@@ -1,0 +1,5 @@
+E101 - Arun
+Salary: Rs. 50000
+E102 - Bala
+Salary: Rs. 2080
+Total Payroll: Rs. 52080

@@ -1,0 +1,3 @@
+AUDIT LOG: Query timed out
+Client caught TimeoutError: Query timed out
+Timeout: 5000 ms

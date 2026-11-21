@@ -1,0 +1,3 @@
+Resource Guard Acquired.
+Resource Guard Released.
+CRC Error: Unable to open input file.

@@ -1,0 +1,4 @@
+Credit Card Authorized: Rs. 1500
+Credit Card Payment Captured.
+Crypto Payment Authorized: Rs. 2000
+Crypto Payment Captured.

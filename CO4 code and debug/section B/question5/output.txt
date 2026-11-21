@@ -1,0 +1,9 @@
+Before Sorting:
+Laptop Rs. 1200 Stock: 10
+Mouse Rs. 25 Stock: 50
+Monitor Rs. 350 Stock: 15
+
+After Sorting:
+Mouse Rs. 25 Stock: 50
+Monitor Rs. 350 Stock: 15
+Laptop Rs. 1200 Stock: 10

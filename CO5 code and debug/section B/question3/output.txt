@@ -1,0 +1,10 @@
+Particle System Created.
+Particle System Created.
+Updating particles for 0.5 seconds.
+Rendering 100 particles.
+Updating particles for 0.5 seconds.
+Rendering 200 particles.
+Particle System Destroyed.
+GameObject destroyed.
+Particle System Destroyed.
+GameObject destroyed.

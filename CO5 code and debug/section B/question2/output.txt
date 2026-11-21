@@ -1,0 +1,3 @@
+Transaction Error: Daily withdrawal limit exceeded.
+Main Handler: Daily withdrawal limit exceeded.
+Balance: Rs. 50000

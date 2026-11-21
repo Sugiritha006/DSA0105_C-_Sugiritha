@@ -1,0 +1,2 @@
+Entity Information: Dragon Entity.
+Dragon breathes scorching fire!

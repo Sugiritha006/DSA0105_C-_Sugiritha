@@ -1,0 +1,5 @@
+Account Holder: Alice
+Balance: Rs. 5000
+Account Holder: Bob
+Balance: Rs. 3000
+Total Reserves in Vault: Rs. 8000

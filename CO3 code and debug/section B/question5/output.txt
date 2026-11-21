@@ -1,0 +1,5 @@
+Initial v1: (5, 0)
+After Prefix: (6, 1)
+After Postfix returned value: (6, 1)
+Current v1: (7, 2)
+After Compound Addition: (9, 5)

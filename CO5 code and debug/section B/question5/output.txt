@@ -1,0 +1,3 @@
+Calculated Temperature: 6
+Temperature Normal.
+Telemetry committed: 6

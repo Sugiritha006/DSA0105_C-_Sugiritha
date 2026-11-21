@@ -1,0 +1,2 @@
+Dot Product: 13
+Vectors are Equal
